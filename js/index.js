@@ -1,7 +1,7 @@
 $('#login-button').click(function (event) {
 	var userName=document.getElementById("userName").value.toLowerCase();
 		//check
-    if(userName=="rena"){
+    if(userName=="shinta"){
 			event.preventDefault();
 			$('form').fadeOut(500);
 			$('.wrapper').addClass('form-success');
