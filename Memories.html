@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"> 
+ <title>Happy Birthday</title>
+ <link rel="stylesheet" href="css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/memories.css">
+</head>
+
+<body>
+  <!-- 背景音乐 -->
+  <div style="display:none">
+    <!-- 网易云外链 -->
+    <audio controls autoplay id="soundHbd" style="display: none;">
+        <source src="music/hbd.mp3" type="audio/mpeg"/>
+    </audio>    
+  </div>
+<div class="bgcolor">
+  <div style="z-index:100;" id="dowebok">
+      <!--第一屏-->
+      <div class="section">
+          <div class="ly-box01">
+            <div class="ly-txt01">
+              <p class="ly-stxt01">Selamat ulang tahun ya :)</p>
+              <p class="ly-stxt02">Seiring dengan bertambahnya usia,</p>
+              <p class="ly-stxt03">semoga semakin disayang Allah SWT,</p>
+              <p class="ly-stxt04">segala urusannya dipermudah,</p>
+              <p class="ly-stxt05">pahalanya terus ditambah,</p>
+              <p class="ly-stxt06">dilancarkan rezekinya,</p>
+              <p class="ly-stxt07">disegerakan semua keinginannya</p>
+              <p class="ly-stxt08">Aamiin ya Allah</p>
+            </div>
+        </div>
+      </div>
+
+      <!--第二屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint11"></div>
+          <div class="ly-box11">
+              <div class="ly-txt11">
+                09-09-2021
+            </div>
+              <div class="ly-txt12">
+                  Kamu kirim pap ini
+              </div>
+              <div class="ly-imgbox11">
+                <img class="ly-img11" src="img/img_1.jpeg">
+              </div>
+          </div>
+          <div class="ly-triangle11"></div>
+
+          <div class="ly-box12">
+              <div class="ly-txt13">
+                  Cantik emang
+              </div>
+              <div class="ly-txt14">
+                 <p>Tapi...</p>
+                 <p>sayang sih....</p>
+			     <p>Belum bisa dimiliki</p>
+                 <p>HAHAHAHAHA</p>
+              </div>
+          </div>
+          <div class="ly-triangle12"></div>
+      </div>
+
+      <!--第三屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint21"></div>
+          <div class="ly-box21">
+              <div class="ly-txt21">
+                10-09-2021
+            </div>
+              <div class="ly-txt22">
+                 <p>Emang gak kerasa</p>
+                 <p>makin tua aja kamu</p>
+                 <p>makin cantik juga sih</p>
+              </div>
+              <div class="ly-imgbox21">
+                <img class="ly-img21" src="img/img_2.jpeg">
+              </div>
+          </div>
+          <div class="ly-triangle21"></div>
+
+          <div class="ly-box22">
+              <div class="ly-txt23">
+                  Sumpahhh
+              </div>
+              <div class="ly-txt24">
+                  <p> Ini cantik bangett</p>
+              </div>
+              <div class="ly-imgbox22">
+                <img class="ly-img22" src="img/img_3.jpg">
+              </div>
+          </div>
+          <div class="ly-triangle22"></div>
+          <div class="ly-triangle23"></div>
+      </div>
+
+      <!--第四屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint31"></div>
+          <div class="ly-box31">
+              <div class="ly-txt31">
+                  Happy Birthday ya :)
+              </div>
+              <div class="ly-imgbox31">
+                <img class="ly-img31" src="img/img_5.jpeg">
+              </div>
+          </div>
+          <div class="ly-triangle31"></div>
+
+          <div class="ly-box32">
+              <div class="ly-txt33">
+                  Semoga cepet nikah :)))
+              </div>
+              <div class="ly-txt34">
+                 <p>hehehehe</p>
+              </div>
+              <div class="ly-imgbox31">
+                <img class="ly-img31" src="img/img_6.jpg">
+              </div>
+          </div>
+          <div class="ly-triangle32"></div>
+      </div>
+
+      <div class="section">
+        <div class="timeline"></div>
+        <div class="timepoint31"></div>
+        <div class="ly-box31">
+            <div class="ly-txt31">
+                <p>Sekali lagi, selamat ngolotan yaa</p>
+                <p>Pokoknya makin +++</p>
+                <p>Inget, kamu dah tua</p>
+                <p>makanya buruan nikah wkwkk</p>
+                Cuek nya rada di kurang-kurangin ya, ren hahaha
+            </div>
+            <div class="ly-imgbox31">
+              <img class="ly-img31" src="img/img_4.jpg">
+            </div>
+        </div>
+        <div class="ly-triangle31"></div>
+    </div>
+
+
+       </div>
+  <!--动态方块-->
+  <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+  </div>
+
+
+<script type="text/javascript">
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+        var soundOn = document.getElementById("soundHbd"); 
+        soundOn.play(); 
+         // stop microphone stream acquired by getUserMedia
+         stream.getTracks().forEach(function (track) { track.stop(); });
+     });
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<!-- <script src="js/auto-play.js"></script> -->
+<script src="js/memories.js"></script>
+</body>
+</html>
